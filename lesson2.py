@@ -1,3 +1,5 @@
+number = 4567
+
 print(4567 // 4567)
 print(4567 // 2283)
 print(4567 % 1141)
@@ -14,6 +16,5 @@ e = number % 10
 reversed_number = e * 10000 + d * 1000 + c * 100 + b * 10 + a
 
 print(reversed_number)
-number = 4564
 
 
