@@ -1,9 +1,16 @@
-number = 4567
+number = input("Enter a number: ")
 
-print(4567 // 4567)
-print(4567 // 2283)
-print(4567 % 1141)
-print(4567 % 1521)
+a = int(number) // 1000
+b = (int(number) // 100) % 10
+c = (int(number) // 10) % 10
+d = int(number) % 10
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+
 
 number = 98765
 
