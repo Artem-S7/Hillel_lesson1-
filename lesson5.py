@@ -9,10 +9,17 @@ elif name[0].isdigit():
     print(False)
 elif name in keyword.kwlist:
     print(False)
-elif not name.islower():
+elif name != name.lower():
     print(False)
-elif any(ch in string.punctuation.replace("_", "") or ch.isspace() for ch in name):
+elif any((ch in string.punctuation.replace("_", "")) or ch.isspace() for ch in name):
+    print(False)
+elif name == "_":
+    print(True)
+elif name.startswith("__") and name.endswith("__"):
+    print(False)
+elif set(name) == {"_"}:
     print(False)
 else:
     print(True)
+
 
