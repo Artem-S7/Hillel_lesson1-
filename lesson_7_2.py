@@ -1,9 +1,10 @@
-def correct_sentence (text) :
-    text = text[0].upper() + text[1:]
+def correct_sentence(text):
+    
+    capitalized = text[0].upper() + text[1:]
+    if not capitalized.endswith('.'):
+        capitalized += '.'
+    return capitalized
 
-    if not text.endswith('.'):
-        text += '.'
-    return text
 
 assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 assert correct_sentence("hello") == "Hello.", 'Test2'
