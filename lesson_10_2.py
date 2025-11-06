@@ -1,3 +1,5 @@
+
+
 def first_word(text):
     text = text.replace('.', ' ').replace(',', ' ')
     text = text.strip()
