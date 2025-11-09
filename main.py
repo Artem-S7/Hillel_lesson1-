@@ -1,3 +1,1 @@
-print("Hello Pokemon")
-
-x = 1 ("type number: ")
+print ("Hello Pokemon")
